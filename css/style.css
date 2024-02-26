@@ -1,0 +1,539 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+a:hover{
+    color: #1ed760;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #121212;
+}
+
+/*navbar*/
+
+#navbar{
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+}
+
+#navbar .navbar-container{
+    width: 84.7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar .navbar-container ul{
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+}
+
+#navbar .navbar-container li{
+    padding: 0 1em;
+}
+
+#navbar .navbar-container li:nth-child(3){
+    border-right: white 1px solid;
+    padding-right: 2em;
+}
+#navbar .navbar-container li:nth-child(4){
+    color: #cfcfcf;
+    padding-left: 2em;
+}
+#navbar .navbar-container li:nth-child(5){
+    color: #cfcfcf;
+}
+.logo{
+    height: auto;
+    width: 8.3em;
+    margin: 1.25em 0;
+}
+
+/*showcase*/
+
+#showcase{
+    height: 87.8vh;
+    display: flex;
+    justify-content: left;
+    background: url(../img/Credit_Spotify_Sean-Michon_3.jpg ) center center / cover;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode:color;
+}
+#showcase .first-content{
+    margin: 4.8em 7.2em;
+    padding: .5em .5em;
+    width: 49%;
+    height: 20em;
+    border-radius: 1em;
+}
+
+#showcase .first-content h2{
+    font-size: 2.7rem;
+    font-weight: bolder;
+    line-height: 1em;
+}
+
+#showcase .first-content p{
+    margin: 1.5em 0;
+    font-size: 1em;
+}
+
+#showcase .first-content .termos{
+    font-size: .7em;
+}
+
+#showcase .first-content .termos a{
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+#showcase .first-content .buttons{
+    display: flex;
+    justify-content: space-between; 
+    margin: 2em 0;
+}
+
+.btn{
+    font-weight: bold;
+    background: none;
+    border: 1px #ffd2d7 solid;
+    border-radius: 3em;
+    font-size: 1em;
+    height: 3em;
+    width: 20em;
+}
+
+#showcase .first-content #btn-primary{
+    color: #000;
+    background-color: #ffd2d7;
+}
+
+#showcase .first-content #btn-sec{
+    background-color: #000;
+}
+
+/*premium*/
+
+#premium-content{
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    margin: 5em auto;
+    margin-bottom: 0;
+    align-items: center;
+    text-align: center;
+}
+
+#premium-content .premium-differences h2{
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+
+#premium-content .premium-differences h3{
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin: .8em 0;
+}
+
+#premium-content .premium-table {
+    max-width: 35%;
+    text-align: left;
+    margin: 2em auto;
+}
+#premium-content .premium-table td{
+    padding-left: .5em;
+    text-decoration:underline dotted;
+    border-bottom: white 1px solid;
+}
+
+#premium-content .premium-table th{
+    height: 7em;
+    text-align: center;
+    border-bottom: white 1px solid;
+}
+#premium-content .premium-table th:first-child{
+    text-align: left;
+    padding-left: .5em;
+}
+#premium-content .premium-table th:nth-child(3){
+    background-color: #313131;
+}
+
+#premium-content .premium-table .value{
+    width: 6em;
+    height: 3em;
+    text-decoration: none;
+    text-align: center;
+}
+
+#premium-content .premium-table .table-data{
+    width: 12em;
+    line-height: 1.5em;
+    padding: 1em 0;
+}
+
+#premium-content .premium-table .spot-Free{
+    color: #cfcfcf;
+}
+
+#premium-content .premium-table .icons{
+    background-color: #313131;
+    font-size: 1.2em;
+}
+
+/*payment content*/
+
+#pay-resources {
+    width: 68%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#pay-resources h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+#pay-resources p{
+    margin: 1.3em auto;
+    font-size: 1em;
+    font-weight: lighter;
+}
+#pay-resources a{ color: #fff; }
+
+#pay-resources .cred-cards{
+    display: flex;
+    width: 23%;
+    margin: 1em auto 0 auto;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#pay-resources .cred-cards .card-icons{
+    font-size: 2.5em;
+    margin: .3em auto;
+    color: white;
+}
+
+#pay-resources .resources{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: 5em .4em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pay-resources .resources h3{
+    font-size: 2rem;
+}
+
+#pay-resources .resources .resources-list{
+    list-style: none;
+    list-style-position: inside;
+    text-align: left;
+}
+
+#pay-resources .resources .resources-list li{
+    margin: .3em;
+    display: flex;
+    font-weight:lighter;
+}
+
+#pay-resources .resources .resources-list .resource-item i{
+    margin-right: .5em;
+}
+
+/*Premium content*/
+#cards-container{
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#cards-container .card{
+    background-color: #242424;
+    display: block;
+    flex-direction: column;
+    max-width: 30.51%;
+    height: 28.5em;
+    border-radius: .6em;
+    margin: 1.33em auto;
+
+}
+
+#cards-container .freeMonth{
+    width: 50%;
+    height: 2em;
+    background-color: #ffd2d7;
+    border-radius: .6em 0 .6em 0;
+    
+}
+
+#cards-container .freeMonth p{
+    color:#000;
+    font-size: 1em;
+    font-weight: 900;
+    text-align: center;
+    
+    padding: .4em 0;
+}
+
+#cards-container .cardContent{
+    padding: 1.1em;
+}
+#cards-container .cardContent .logoPremium{
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+#cards-container .cardContent .logo{
+    font-size: 1.3em;
+    width: 1em;
+    margin: .6em 0 0em auto;
+}
+
+#cards-container .cardContent .top h2{
+    font-size: 1.9em;
+    letter-spacing: .06em;
+    color: #ffd2d7;
+    margin: .3em auto;
+}
+
+#cards-container .cardContent .top h3{
+    font-weight: bold;
+    font-size: .9em;
+    letter-spacing: 0.08em;
+    margin-bottom: .3em;
+}
+
+#cards-container .cardContent .top .descPremuim{
+    font-weight: lighter;
+    color: #a8a9ab;
+    font-size: .9em;
+    padding-bottom: 1em;
+    border-bottom: #313131 2px solid;
+}
+
+#cards-container .cardContent .botton .aboutPremium{
+    margin: 1.7em auto;
+    list-style-position: inside;
+    font-size: .95em;
+    padding-bottom: 1em;
+}
+#cards-container .cardContent .botton .aboutPremium li{
+    margin-bottom: .4em;
+}
+
+#cards-container .cardContent .botton #individualBtn{
+    color: #000;
+    background-color: #ffd2d7;
+}
+
+#cards-container .cardContent .botton .descPremiumDetalhada{
+    font-weight: lighter;
+    color: #a8a9ab;
+    font-size: .76em;
+    text-align: center;
+    line-height: 1.4em;
+    margin: 1.4em 0; 
+}
+
+#cards-container .cardContent .botton .descPremiumDetalhada a{
+    color: #a8a9ab;
+}
+
+/* universitario card */
+
+#cards-container #cardUniversitario .freeMonth{
+    background-color: #C4B1D4;
+}
+
+#cards-container #cardUniversitario h2{
+    color: #C4B1D4;
+}
+
+#cards-container #cardUniversitario .botton .aboutPremium{
+    padding-bottom: 0;
+}
+
+#cards-container #cardUniversitario .botton #universitarioBtn{
+    color: #000;
+    border-color: #C4B1D4;
+    background-color: #C4B1D4;
+}
+
+/* duo card */
+
+#cards-container #cardDuo .top h2{
+    color: #ffc862;
+}
+
+#cards-container #cardDuo .top h3{
+    border-bottom: #313131 2px solid;
+    padding-bottom: 2.8em;
+}
+
+#cards-container #cardDuo .botton .aboutPremium{
+    padding: 1.8em 0 0 0;
+}
+
+#cards-container #cardDuo .botton #DuoBtn{
+    background-color: #ffc862;
+    border-color: #ffc862;
+    color: #000;
+}
+
+/* card familia */
+
+#cards-container #cardFamilia{
+    height: 25.3em;
+}
+
+#cards-container #cardFamilia .top h2{
+    color: #a5bbd1;
+}
+
+#cards-container #cardFamilia .top h3{
+    border-bottom: #313131 2px solid;
+    padding-bottom: 1em;
+}
+
+#cards-container #cardFamilia .botton .aboutPremium{
+    padding: 0;
+}
+
+#cards-container #cardFamilia .botton #familiaBtn{
+    background-color: #a5bbd1;
+    color: #000;
+    border-color: #a5bbd1;
+}
+
+/*footer */
+
+
+footer{
+    box-sizing: border-box;
+    background-color: #000;
+    height: 86vh;
+    margin: 10em auto 0 auto;
+    
+}
+#footerContent{
+    max-width: 84.52%;
+    height: auto;
+    padding: 3.85em 0;
+    margin: 0 auto;
+}
+
+#footerContent a{
+    text-decoration: none;
+}
+
+/*comunidade*/
+
+#footerContent #communitContent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#footerContent #communitContent .logo{
+    height: 2.5em;
+    width: auto;
+}
+
+#footerContent #communitContent .grid-container {
+    text-align: left;
+    margin: 2.4em 0 0 3.8em;
+    display: grid;
+    grid-template: ;
+    width: 80%;
+    height: 30hv;
+    justify-content: space-between;
+}
+
+#footerContent #communitContent #socialContent a{
+    color: white;
+
+}
+#footerContent #communitContent #socialContent a:hover{
+    color: #1ed760;
+}
+
+#footerContent #communitContent th {
+    font-weight: 900;
+    font-size: .8em;
+    color: #8f8f8f;
+    letter-spacing: .1em;
+    vertical-align: bottom;
+    padding-bottom: 1.2em;
+}
+
+#footerContent #communitContent  td {
+    height: auto;
+    width: 5.6;
+    padding: 0;
+    vertical-align: bottom;
+} 
+
+#footerContent #communitContent .social{
+    width: 40em;
+    display: flexbox;
+    margin-top: 2.4em;
+    text-align: end;
+}
+
+#footerContent #communitContent .socialIcon{
+    margin: 0 .18em;
+    background-color: #272727;
+    padding: .5em;
+    font-size: 1.9em;
+    font-weight: lighter;
+}   
+
+#footerContent #communitContent .socialIcon #insta{
+    font-size: 20em;
+}
+
+/*legal Content*/
+
+#footerContent #legalContent{
+    margin-top: 6em;
+    display: flex;
+    justify-content: space-between;
+    font-size: .74em;
+}
+
+#footerContent #legalContent ul{
+    list-style: none;
+    display: flex;
+    width: 59%;
+    justify-content: space-between;
+}
+
+#footerContent #legalContent #content li, a{
+    padding-top: 3.5em;
+    color: #a8a9ab;
+    font-weight: lighter;
+}
+
+#footerContent #legalContent .langCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footerContent #legalContent .langCopy p, i {
+    color: #a8a9ab;
+    text-align: right;
+}
